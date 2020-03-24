@@ -1,0 +1,80 @@
+{
+  "test": {
+    "category": "master",
+    "sounds": [
+      "test"
+    ]
+  },
+  "jamp": {
+    "category": "player",
+    "sounds": [
+      "jamp"
+    ]
+  },
+  "telepotr": {
+    "category": "player",
+    "sounds": [
+      "telepotr"
+    ]
+  },
+  "shild1": {
+    "category": "player",
+    "sounds": [
+      "shild/shild1"
+    ]
+  },
+    "shild2": {
+    "category": "player",
+    "sounds": [
+      "shild/shild2"
+    ]
+  },
+    "shild3": {
+    "category": "player",
+    "sounds": [
+      "shild/shild3"
+    ]
+  },
+    "shild4": {
+    "category": "player",
+    "sounds": [
+      "shild/shild4"
+    ]
+  },
+    "shild5": {
+    "category": "player",
+    "sounds": [
+      "shild/shild5"
+    ]
+  },
+    "shild6": {
+    "category": "player",
+    "sounds": [
+      "shild/shild6"
+    ]
+  },
+    "shild7": {
+    "category": "player",
+    "sounds": [
+      "shild/shild7"
+    ]
+  },
+    "shild8": {
+    "category": "player",
+    "sounds": [
+      "shild/shild8"
+    ]
+  },
+    "shild9": {
+    "category": "player",
+    "sounds": [
+      "shild/shild9"
+    ]
+  },
+    "shild10": {
+    "category": "player",
+    "sounds": [
+      "shild/shild10"
+    ]
+  }
+}

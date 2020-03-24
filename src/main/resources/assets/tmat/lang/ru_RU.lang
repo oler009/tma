@@ -1,0 +1,76 @@
+
+tmat.msesage.lvlup=Поздравляю вас с новым уровнем.
+
+item.tmat.magichelmet.name=Нейро-Обут
+item.magichelmet.description=Зрение как у орла внемание не увлекайтес подглядованием  
+item.magichelmet.description2=Малоразмерный маштабирующийся кварковый компютер
+item.magichelmet.description3=способный получать информацию из инфополя вселенной
+item.magichelmet.description4=хранить и получать информацию из собственого 
+item.magichelmet.description5=информационого поля имеет возмажность настраивать интерфейс
+item.magichelmet.description6=Подстраивается под носителя
+item.magichelmet.description7=и даёт имунитет к ментальному воздействию 
+item.magichelmet.description8=Вы всегда будите помнить всё
+item.magichelmet.description9=Во время смерти вы не теряете память и предметы
+item.tmat.magicplate.name=Кирасса
+item.magicplate.description=Серце как у льва а **** как у Быка
+item.tmat.magicpants.name=Штаны
+item.magicpants.description=Враги поцелуйте мой металический зад
+item.tmat.magicboots.name=сапоги
+item.magicboots.description=И сказали вы да ну нахрен и свалили в закат 
+busEvent.java=Настройка божественной брони
+
+item.set.description=Свойства скрыты
+
+
+key.tmat.name.setings=Техно магичиская броня
+key.tmat.fly= Вкл/Выкс полёт
+key.tmat.teleport= Свалить в закат
+key.tmat.itegrate_armor=Встроить броню в ауру
+key.tmat.tmatsetings=Настройка
+
+goi.tmat.setings.name=Настройки
+goi.tmat.setings.jampradius=Радиус прыжка
+goi.tmat.setings.save=сохранить
+goi.tmat=1200
+
+
+error.text.errorRecipe1=Рецепт не был загружен
+
+
+
+tmat.message_name.coldawn=Требуется отдохнуть чтобы свалить в закат осталось
+tmat.message_name.armor.nothull=На вас что-то одето снимите одежду и можете воплощять одежду
+tmat.message_name.armor.import=Броня сливаеися с информационом полем носителя 
+tmat.message_name.armor.outport=Броня начинает проявлятся на вас 
+
+armor.bonus.set.traide.farmer=продаёт житель Фермер 
+armor.bonus.set.traidep.farmer=Покупает житель Фермер 
+
+armor.bonus.set=Бонусы полного сета :
+armor.bonus.set=Бонусы полного сета :
+armor.bonus.set.secund= Секунд
+armor.bonus.set.01=Макс Обём праны
+armor.bonus.set.02= Пока у вас есть прана броня будет поглощять урон 
+armor.bonus.set.10=Нанесёный урон будет лечить носителя за счёт энергии  
+armor.bonus.set.20=Регенерация праны +
+armor.bonus.set.21= раз в 
+armor.bonus.set.30=Уровень обёма праны 
+armor.bonus.set.40=Прогрес опыта  
+armor.bonus.set.50=Предотврощение смерти раз в 
+armor.bonus.set.60=Починка 
+armor.bonus.set.61= за раз в 
+armor.bonus.set.70=Позволяет видеть в темноте
+armor.bonus.set.80=Автоматическая отчистка
+armor.bonus.set.90=Автомотическое лечение от болезней и омоложение оргонизма носителя
+armor.bonus.set.100=Вывод информации о предметах их ценах и кто их покупает или продоёт
+armor.bonus.set.110=Есь режим который скрывает одежду у существ
+armor.bonus.set.110=Есь режим который скрывает одежду у существ
+armor.bonus.set.120=Кормит владельца раз в  
+armor.bonus.set.130=Увеличевает силу владельца в  
+armor.bonus.set.140= раз
+armor.bonus.set.150=подстраивается макс см 
+armor.bonus.set.160=Шанс что враг вместо удара поцелует ваш зад и анегелируетя от стыда %
+armor.bonus.set.170=Позваляет салить в закат раз в 
+armor.bonus.set.171= 1 блок 1 прана
+armor.bonus.set.180=мифриловый зад
+
