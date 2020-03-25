@@ -465,8 +465,8 @@ public class busEvent {
 					generator_shild = Minecraft.getMinecraft().theWorld.getWorldTime() + 20;
 				}
 				
-				tmat_skill.shild_to_experians(tmat.magic_shild_regen);
-				tmat.magic_shild += tmat.magic_shild_regen;
+				tmat_skill.shild_to_experians(((tmat.magic_shild_regen * 5) * 10)/100);
+				tmat.magic_shild += ((tmat.magic_shild_regen * 5) * 10)/100;
 				
 			}
 		}
