@@ -73,7 +73,7 @@ public class busEvent {
 		    }
 		  if (tmat.tmatsetings.isPressed()) 
 		    {
-			  Minecraft.getMinecraft().thePlayer.playSound("tmat:jamp", 1.5F, 1.5F);
+			//  Minecraft.getMinecraft().thePlayer.playSound("tmat:jamp", 1.5F, 1.5F);
 			  ///tmat_skill.tmajamp(1);
 			//  System.out.println("Teleport");
 				Minecraft.getMinecraft().displayGuiScreen(new status_shild());
@@ -123,7 +123,7 @@ public class busEvent {
 		if(tmat.tmaradio.isPressed()) 
 		{
 			Random rnd = new Random();
-			Minecraft.getMinecraft().thePlayer.playSound("tmat:shild"+rnd.nextInt(10), 1.5F, 1.5F); 
+			Minecraft.getMinecraft().thePlayer.playSound("tmat:lvlup", 1.5F, 1.5F); 
 			//Minecraft.getMinecraft().thePlayer.playSound("tmat:shild/shild"+rnd.nextInt(10), 1.5F, 1.5F); 
 		//	soundManager.sndSystem.stop(soundName);
 		}
@@ -455,6 +455,22 @@ public class busEvent {
 
 			
 		}
+		else {
+			if(magic_shild == tmat.magic_shild  && generator_shild < Minecraft.getMinecraft().theWorld.getWorldTime()) {
+				
+				if((1200 - tmat.magic_shild_lvl) > 0) {
+					generator_shild = Minecraft.getMinecraft().theWorld.getWorldTime() + (1200 - tmat.magic_shild_lvl);
+				}
+				else {
+					generator_shild = Minecraft.getMinecraft().theWorld.getWorldTime() + 20;
+				}
+				
+				tmat_skill.shild_to_experians(tmat.magic_shild_regen);
+				tmat.magic_shild += tmat.magic_shild_regen;
+				
+			}
+		}
+		
 		
 		
 		if(tmat_skill.tmajampbo) {
@@ -470,16 +486,11 @@ public class busEvent {
 			  double newZ = player.posZ + world.rand.nextInt(radius_jamps) - world.rand.nextInt(radius_jamps);
 
 		    busEvent.randomteleport = date.getTime() +  (60000 - tmat.magic_shild_lvl);
-	   	//System.out.println("Keyboard.KEY_T  = "+ Keyboard.KEY_T);	
-	       //player.setPosition(newX, player.posY, newZ);
 	       player.setPositionAndUpdate(newX, player.posY, newZ);
 	       tmat_skill.shild_to_experians(radius_jamps);
-	        //a = { newX, player.posY, newZ};
-	      // System.out.println("Сработало!");
 		  }
 		  else {
 			  player.addChatMessage(new ChatComponentText( StatCollector.translateToLocal("tmat.message_name.coldawn") + " " + ((busEvent.randomteleport - date.getTime()) / 1000) + StatCollector.translateToLocal("armor.bonus.set.secund")));
-			 // player.addChatMessage(new ChatComponentTranslation("tmat.message_name.coldawn")  (busEvent.randomteleport - date.getTime()) / 1000);
 		  }
 		  tmat_skill.tmajampbo = false;
 		}

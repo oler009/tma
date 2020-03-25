@@ -1,0 +1,1 @@
+cmd /k cmd /c build.bat

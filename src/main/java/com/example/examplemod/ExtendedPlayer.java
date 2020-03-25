@@ -35,7 +35,7 @@ public void saveNBTData(NBTTagCompound compound)
 	properties.setLong("radius_jamp", tmat_skill.radius_jamp);
 	properties.setBoolean("tmat_armor_integrate", tmat.tmat_armor_integrate);
 	properties.setLong("tmat_time_mana_regen", busEvent.generator_shild);
-	properties.setLong("tmat_nedxptolvl", tmat_skill.nedxptolvl);
+	//properties.setLong("tmat_nedxptolvl", tmat_skill.nedxptolvl);
 	
 	
 	
@@ -53,8 +53,9 @@ public void loadNBTData(NBTTagCompound compound)
 	tmat_skill.radius_jamp = properties.getInteger("radius_jamp");
 	tmat.tmat_armor_integrate = properties.getBoolean("tmat_armor_integrate");
 	busEvent.generator_shild = properties.getInteger("tmat_time_mana_regen");
-	tmat_skill.nedxptolvl = properties.getInteger("tmat_nedxptolvl");
-	if(tmat_skill.nedxptolvl == 0.0)tmat_skill.nedxptolvl = tmat.magic_shild_lvl * 20 + ((tmat.magic_shild_lvl * 5) * 25)/100; 
+	
+	tmat_skill.nedxptolvl = tmat.magic_shild_lvl * 20 + ((tmat.magic_shild_lvl * 5) * 25)/100;
+	//if(tmat_skill.nedxptolvl == 0.0)tmat_skill.nedxptolvl = tmat.magic_shild_lvl * 20 + ((tmat.magic_shild_lvl * 5) * 25)/100; 
 	//tmat_skill.nedxptolvl = 0;
 	
 	busEvent.repair_items = (long) (tmat.magic_shild_lvl / 100);

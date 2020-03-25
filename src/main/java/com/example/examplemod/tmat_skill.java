@@ -28,8 +28,9 @@ public class tmat_skill {
 			//System.out.println(tmat.magic_shild_expereans+" > "+ nedxptolvl);
 			//System.out.println("новый уровень");
 			Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText( StatCollector.translateToLocal("tmat.msesage.lvlup")));
+			Minecraft.getMinecraft().thePlayer.playSound("tmat:lvlup", 1.5F, 1.5F);
 			
-		}
+		} 
 	}
 	
 	public static long shild_to_experians(long ammount) 

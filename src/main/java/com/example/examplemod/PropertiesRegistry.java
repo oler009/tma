@@ -183,7 +183,8 @@ public class PropertiesRegistry {
     		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() + ChatFormatting.DARK_GREEN.toString() + StatCollector.translateToLocal("armor.bonus.set.90"));
     		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() + ChatFormatting.DARK_GREEN.toString() + StatCollector.translateToLocal("armor.bonus.set.100"));
     		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() + ChatFormatting.DARK_GREEN.toString() +  StatCollector.translateToLocal("armor.bonus.set.110"));
-    	 }
+    		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() + ChatFormatting.DARK_GREEN.toString() + StatCollector.translateToLocal("armor.bonus.set.190"));
+     		}
     	 else {
     		 event.toolTip.add(ChatFormatting.DARK_GRAY.toString() + ChatFormatting.ITALIC.toString() + StatCollector.translateToLocal("item.set.description"));
     	 }
@@ -208,7 +209,8 @@ public class PropertiesRegistry {
     		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() + ChatFormatting.DARK_GREEN.toString() + StatCollector.translateToLocal("armor.bonus.set.80"));
     		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() + ChatFormatting.DARK_GREEN.toString() + StatCollector.translateToLocal("armor.bonus.set.90"));
     		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() + ChatFormatting.DARK_GREEN.toString() + StatCollector.translateToLocal("armor.bonus.set.150")+tmat.magic_shild_lvl);
-    	 }
+    		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() + ChatFormatting.DARK_GREEN.toString() + StatCollector.translateToLocal("armor.bonus.set.190"));
+     		}
     	 else {
     		 event.toolTip.add(ChatFormatting.DARK_GRAY.toString() + ChatFormatting.ITALIC.toString() + StatCollector.translateToLocal("item.set.description"));
     	 }
@@ -231,7 +233,8 @@ public class PropertiesRegistry {
     		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() + ChatFormatting.DARK_GREEN.toString() + StatCollector.translateToLocal("armor.bonus.set.80"));
     		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() + ChatFormatting.DARK_GREEN.toString() + StatCollector.translateToLocal("armor.bonus.set.90"));
     		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() + ChatFormatting.DARK_GREEN.toString() + StatCollector.translateToLocal("armor.bonus.set.160") + (int) (tmat.magic_shild_lvl  / 5));
-    	 }
+    		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() + ChatFormatting.DARK_GREEN.toString() + StatCollector.translateToLocal("armor.bonus.set.190"));
+     		}
     	 else {
     		 event.toolTip.add(ChatFormatting.DARK_GRAY.toString() + ChatFormatting.ITALIC.toString() + StatCollector.translateToLocal("item.set.description"));
     	 }
@@ -256,6 +259,8 @@ public class PropertiesRegistry {
     		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() + ChatFormatting.DARK_GREEN.toString() + StatCollector.translateToLocal("armor.bonus.set.90"));
     		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() +  StatCollector.translateToLocal("armor.bonus.set.170") + ((60000 - tmat.magic_shild_lvl) / 1000) + StatCollector.translateToLocal("armor.bonus.set.171"));
     		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() + ChatFormatting.DARK_GREEN.toString() + StatCollector.translateToLocal("armor.bonus.set.180"));
+    		 event.toolTip.add(ChatFormatting.DARK_GREEN.toString() + ChatFormatting.DARK_GREEN.toString() + StatCollector.translateToLocal("armor.bonus.set.190"));
+    		 
     	 }
     	 else {
     		 event.toolTip.add(ChatFormatting.DARK_GRAY.toString() + ChatFormatting.ITALIC.toString() + StatCollector.translateToLocal("item.set.description"));

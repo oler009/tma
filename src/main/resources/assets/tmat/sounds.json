@@ -76,5 +76,11 @@
     "sounds": [
       "shild/shild10"
     ]
+  },
+    "lvlup": {
+    "category": "player",
+    "sounds": [
+      "lvlup"
+    ]
   }
 }
