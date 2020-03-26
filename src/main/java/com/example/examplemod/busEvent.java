@@ -464,9 +464,20 @@ public class busEvent {
 				else {
 					generator_shild = Minecraft.getMinecraft().theWorld.getWorldTime() + 20;
 				}
-				
+				if(tmat.magic_shild_lvl < 50)
+				{
 				tmat_skill.shild_to_experians(((tmat.magic_shild_regen * 5) * 10)/100);
 				tmat.magic_shild += ((tmat.magic_shild_regen * 5) * 10)/100;
+				}
+				else if(tmat.magic_shild_lvl < 100){
+				tmat_skill.shild_to_experians(((tmat.magic_shild_regen * 5) * 1)/100);
+				tmat.magic_shild += ((tmat.magic_shild_regen * 5) * 1)/100;
+				}
+				else{
+					tmat_skill.shild_to_experians((((tmat.magic_shild_regen * 5) * 1) /2)/100);
+					tmat.magic_shild += (((tmat.magic_shild_regen * 5) * 1) /2)/100;
+				
+				}
 				
 			}
 		}
