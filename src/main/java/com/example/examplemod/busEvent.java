@@ -32,7 +32,8 @@ public class busEvent {
 	 long armor_repair_body = 0;
 	 long armor_repair_legs = 0;
 	 long armor_repair_feet = 0;
-	 	 
+	 long armor_repair_Hand = 0;
+	 
 
 	
 	 public static long  generator_shild;
@@ -215,8 +216,11 @@ public class busEvent {
 	ItemStack body = player.getCurrentArmor(2);
 	ItemStack legs = player.getCurrentArmor(1);
 	ItemStack feet = player.getCurrentArmor(0);
+	//ItemStack Hand = player.getHeldItem();
+	//ItemStack Hand = player.getItemInUse();
+	ItemStack Hand = player.getCurrentEquippedItem();
 	
-	
+	//e.getPlayer().getItemInHand
 
 	//String magichelmet = tmat.magichelmet.getUnlocalizedName();
 	
@@ -225,10 +229,131 @@ public class busEvent {
 	//System.out.println("Test :" + head.getUnlocalizedName());
 	//if (head != null) {}
 	 magicsetitems = 0;
-	 
+
 	 if(tmat.tmat_armor_integrate == null) tmat.tmat_armor_integrate= false;
 	 if(tmat.tmat_armor_integrate) {
-		 magicsetitems = 4;
+	 	 magicsetitems = 4;
+		 
+		 if(tmat.magic_shild_lvl >= 100 ) {
+			// System.out.println("Test :" + tmat.tmat_armor_integrate);
+						 
+		 Date date = new Date();
+		 
+		 
+		// System.out.println("Test :" + head.getUnlocalizedName());
+		 // ремонт Шлема
+		 if (head != null && head.getItemDamage()!= 0 ) {
+				if(head.getItemDamage()!= 0)
+				{
+					
+					if(armor_repair_head < date.getTime()) 
+					{
+					//	System.out.println();
+						long timer_repair = 60000 - tmat.magic_shild_lvl ;
+						if(timer_repair < 1) {timer_repair = 1;}
+						armor_repair_head = date.getTime() + timer_repair;
+				       
+						if(tmat.magic_shild >= 1 + repair_items)
+						{
+							tmat_skill.shild_to_experians(1 + (long) repair_items);
+							head.setItemDamage(head.getItemDamage() - (1 + (int) repair_items));
+						//	System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  "+ head.getMaxDamage()  + "/" + head.getItemDamage());	
+						}
+						
+						
+				    }
+				}
+		 }
+		 // ремонт Шлема
+		 
+		 // ремонт Брони
+			if(body.getItemDamage() != 0) {
+				if(armor_repair_body < date.getTime()) 
+				{
+					
+					
+					
+					long timer_repair = 60000 - tmat.magic_shild_lvl;
+					if(timer_repair < 1) {timer_repair = 1;}
+					armor_repair_body = date.getTime() + timer_repair;
+			       
+					if(tmat.magic_shild >= 1 + (int) repair_items)
+					{
+						tmat_skill.shild_to_experians(1 + (long) repair_items);
+						body.setItemDamage(body.getItemDamage() - (1 + (int) repair_items));
+					}
+				}
+					
+			    }
+		// ремонт Брони
+		 
+		// ремонт Штанов
+			if (legs != null) {
+					if(legs.getItemDamage() != 0) 
+					{
+						if(armor_repair_legs < date.getTime()) 
+						{
+							long timer_repair = 60000 - tmat.magic_shild_lvl;
+							if(timer_repair < 1) {timer_repair = 1;}
+							armor_repair_legs = date.getTime() + timer_repair;
+					       
+							if(tmat.magic_shild >= 1 + (int) repair_items)
+							{
+								tmat_skill.shild_to_experians(1 + (long) repair_items);
+								legs.setItemDamage(legs.getItemDamage() - (1 + (int) repair_items));
+							}
+						}
+				    }
+				}
+		// ремонт Штанов
+		 
+		// ремонт обуви
+			if (feet != null) {
+					if(feet.getItemDamage() != 0) {
+					if(armor_repair_feet < date.getTime()) 
+					{
+						
+						long timer_repair = 60000 - tmat.magic_shild_lvl;
+						if(timer_repair < 1) {timer_repair = 1;}
+						armor_repair_feet = date.getTime() + timer_repair;
+				       
+						if(tmat.magic_shild >= 1 + (int) repair_items)
+						{
+							tmat_skill.shild_to_experians(1 + (long) repair_items);
+							feet.setItemDamage(feet.getItemDamage() - (1 + (int) repair_items));
+						}
+						
+					}
+				    }
+				}
+		// ремонт обуви
+			
+		// ремонт инструмента
+			
+			if (Hand != null) {
+				if(Hand.getItemDamage() != 0) {
+				if(armor_repair_Hand < date.getTime()) 
+				{
+					
+					long timer_repair = 60000 - tmat.magic_shild_lvl;
+					if(timer_repair < 1) {timer_repair = 1;}
+					armor_repair_Hand = date.getTime() + timer_repair;
+			       
+					if(tmat.magic_shild >= 1 + (int) repair_items)
+					{
+						tmat_skill.shild_to_experians(1 + (long) repair_items);
+						Hand.setItemDamage(Hand.getItemDamage() - (1 + (int) repair_items));
+					}
+					
+				}
+			    }
+			}
+		// ремонт инструмента
+			
+			
+			}
+			
+			
 	 }
 	 else {
 		 
@@ -254,20 +379,16 @@ public class busEvent {
 					{
 						tmat_skill.shild_to_experians(1 + (long) repair_items);
 						head.setItemDamage(head.getItemDamage() - (1 + (int) repair_items));
-					//	System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  "+ head.getMaxDamage()  + "/" + head.getItemDamage());	
 					}
-					
-					
 			    }
-				//System.out.println( "  " + armor_repair_head + " - " + date.getTime()  + " - " + (date.getSeconds() - armor_repair_head ));
-
-
 		}
+		
 		
 		
 		magicsetitems++;
 	}
 	}
+	
 	
 	if (body != null) {
 	if(body.getUnlocalizedName().indexOf("magicplate",1) > 1)
